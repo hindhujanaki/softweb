@@ -1,0 +1,180 @@
+product.html
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeCraft</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Courier New', Courier, monospace;
+                        }
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+		background-color:rgb(217, 17, 154);
+            }
+            .navbar {
+                width: 85%;
+                margin: auto;
+                padding: 35px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo {
+                color:rgb(11, 242, 19);
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+            span {
+                color: rgb(179, 179, 48);
+            }
+            form {
+                width: 300px;
+                height: 40px;
+                display: flex;
+                background: blue;
+                padding: 1px 1px;
+                font-size: 15px;
+                border-radius: 10px;
+                backdrop-filter: blur(4px) saturate(180%);
+            }
+            form input {
+                background: transparent;
+                flex: 1;
+                border: 0;
+                outline: none;
+                padding: 12px 20px;
+                font-size: 15px;
+                color: white;
+            } 
+            ::placeholder {
+                color: white;
+            }
+            form button {
+                border: 0;
+                outline: none;
+                padding: 5px 20px;
+                color:black;
+                border-radius: 10px;
+                background:rgb(234, 200, 7);
+                cursor: pointer;
+            }
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                position: relative;
+            }
+            .navbar li a {
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+            }
+            .navbar li:hover {
+                border: 1px;
+                padding: 10px;
+                color: white;
+                background-color:rgb(15, 229, 61);
+                transition: 0.5s; 
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            .container {
+                background: transparent;
+                padding: 10px 5%;
+                padding-bottom: 100px;
+            }
+            .container .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+                gap: 20px;
+            }
+            .container .box-container .box {
+                color: white;
+                box-shadow: 0 5px 10px green;
+                border-radius: 10px;
+                background: transparent;
+                border: 1px solid white;
+                padding: 10px 5px;
+            }
+            .container .box-container .box img {
+                height: 50px;
+                border-radius: 20px;
+            }
+            .container .box-container .box h3 {
+                color: rgb(228, 199, 33);
+                font-size: larger;
+                padding: 10px 0;
+            }
+            .container .box-container .box p {
+                color: white;
+                font-size: larger;
+                line-height: 1.5;
+            }
+            footer {
+                background-color: rgb(223, 197, 50);
+                margin-top: auto;
+            }
+        </style>
+    </head>
+<body background="image.webp">
+    <div class="banner">
+        <br>
+        <div class="navbar">
+            <h1 class="logo"><span> Technex Solution</span></h1>
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="Products.html"> Products </a></li>
+                <li><a href="person.html"> People </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+            <form action="" method="get">
+                <input type="text" placeholder="Enter to Search">
+                <button type="submit"> Search </button>
+            </form>
+        </div>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <img src="lock.jpg" alt="">
+                    <h3>Security Software</h3>
+                    <p>Including antivirus programs, firewalls, and encryption tools.</p>
+                </div>
+
+                <div class="box">
+                    <img src="mobile.jpeg" alt="">
+                    <h3>Mobile Apps</h3>
+                    <p>For various platforms like iOS and Android, ranging from utilities to games to productivity tools.</p> 
+                </div>
+                <div class="box">
+                    <img src="games.jpeg"alt="">
+                    <h3>Games</h3>
+                    <p>Both PC and mobile games, developed for entertainment purposes.</p>
+                </div>
+               
+                <div class="box">
+                    <img src="cloud.jpeg" alt="">
+                    <h3>Cloud Computing Services</h3>
+                    <p>Like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). </p>
+                </div>
+                <div class="box">
+                    <img src="web brow.jpeg" alt="">
+                    <h3>Web Browsers</h3>
+                    <p> Such as Google Chrome, Mozilla Firefox, and Microsoft Edge.</p>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center> Copyright@2024 Developed by G.HINDHU </center>
+    </footer>
+</body>
+</html>
+
